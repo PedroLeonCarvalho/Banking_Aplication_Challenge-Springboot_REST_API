@@ -1,6 +1,6 @@
 package com.desafio.PCPY.domain.transfer;
 
-import com.desafio.PCPY.domain.usuarios.User;
+import com.desafio.PCPY.domain.users.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

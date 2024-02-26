@@ -1,4 +1,4 @@
-package com.desafio.PCPY.domain.usuarios;
+package com.desafio.PCPY.domain.users;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
