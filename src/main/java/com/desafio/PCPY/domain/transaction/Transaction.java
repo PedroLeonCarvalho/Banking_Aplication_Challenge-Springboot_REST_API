@@ -1,4 +1,4 @@
-package com.desafio.PCPY.domain.transfer;
+package com.desafio.PCPY.domain.transaction;
 
 import com.desafio.PCPY.domain.users.User;
 import jakarta.persistence.*;

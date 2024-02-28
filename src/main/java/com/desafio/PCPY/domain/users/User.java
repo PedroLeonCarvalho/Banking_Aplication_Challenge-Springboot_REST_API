@@ -1,5 +1,6 @@
 package com.desafio.PCPY.domain.users;
 
+import com.desafio.PCPY.dtos.UserDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,8 +23,7 @@ public class User {
     @Column(name = "first_name")
     private String firstName;
 
-
-    @Column(name = "las_name")
+    @Column(name = "last_name")
     private String lastName;
 
     @Column(unique = true)
@@ -34,9 +34,19 @@ public class User {
 
     private String password;
 
-@Enumerated(EnumType.STRING)
-    private UserType user;
+    @Enumerated(EnumType.STRING)
+    private UserType userType;
 
     private BigDecimal balance;
 
+    public User(UserDto data) {
+
+        this.firstName = data.firstName();
+        this.lastName = data.lastName();
+        this.balance = data.balance();
+        this.document = data.document();
+        this.userType = data.userType();
+        this.password = data.password();
+        this.email= data.email();
+    }
 }
